@@ -1,5 +1,7 @@
 #include "shell.h"
 
+int last_status = 0;
+
 /**
  * main - Entry point for the simple shell
  * @argc: Argument count

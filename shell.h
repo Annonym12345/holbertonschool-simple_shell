@@ -27,6 +27,7 @@ typedef struct builtin
 } builtin_t;
 
 extern char **environ;
+extern int last_status;
 
 /* Main functions - Task 1 */
 char *read_line(void);

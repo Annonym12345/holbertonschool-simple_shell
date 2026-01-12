@@ -37,6 +37,8 @@ int launch(char **args)
 	else
 	{
 		waitpid(pid, &status, 0);
+		if (WIFEXITED(status))
+			last_status = WEXITSTATUS(status);
 	}
 
 	if (cmd != args[0])
